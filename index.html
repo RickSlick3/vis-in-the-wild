@@ -8,12 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Vis in the Wild - Levels.fyi Compensation Heatmap</h1>
+        <h1>Vis in the Wild</h1>
+        <a href="https://www.levels.fyi/heatmap/"><h3>Levels.fyi Compensation Heatmap</h2></a>
     </header>
 
     <section class="content">
         <div class="card">
-            <h2>Purpose of the Visualization</h2>
+            <h2>What is the purpose of the Visualization?</h2>
             <p>The Levels.fyi Compensation Heatmap visualization provides insights into salary trends across different areas and regions for software engineers. </p>
         </div>
 
@@ -28,7 +29,7 @@
         </div>
 
         <div class="card">
-            <h2>What questions can people ask and answer about this data using this visualization?  How can they find the answers with this tool?</h2>
+            <h2>What questions can people ask and answer about this data using this visualization? How can they find the answers with this tool?</h2>
             <ul class="indent">
                 <li><strong>How does my salary compare to others in my location?</strong> – The user can either search for or select their area on the map and view the salary percentiles to compare their salary with these ranges. </li>
                 <li><strong>Which locations offer the highest software engineer salaries?</strong> – The user can switch the dropdown option in the top right to choose a higher percentile, then view the hotspots on the map.</li>
@@ -38,16 +39,30 @@
         </div>
 
         <div class="card">
+            <h2>Comments on the visual and interaction design choices</h2>
+            <ul class="indent">
+                <li>The visualization is easy to use and effectively represents the geographical representation of the data</li>
+                <li>The selectors to filter or change the displayed data are clear and bug-free</li>
+                <li>Some of the color gradients have very similar colors, making it hard to distinguish close values</li>
+            </ul>
+        </div>
+
+        <div class="card">
             <h2>What are the limitations of this design?</h2>
-            <ul  class="indent">
-                <li>Cannot compare salaries between countries in one view.</li>
-                <li>Cannot compare company salaries without leaving the page.</li>
+            <ul class="indent">
+                <li><strong>Comparing salaries between locations or countries in one view</strong> - The user is unable to compare salaries between two areas without hovering back and forth, or between cuntries without switching pages entirely.</li>
+                <li><strong>Comparing company salaries without leaving the page</strong> - Individual company salaries are not shown in the tooltips and cannot be seen without clicking the location to be taken to a new page.</li>
+                <li><strong>Comparing salaries of different roles and titles</strong> - The visualization shows salaries in percentile groups, with no relation to job titles. The user cannot know if the median salary in one area is primarily data from Junior/Entry-Level or Senior Software Engineers</li>
             </ul>
         </div>
     </section>
 
     <footer>
-        <a href="https://www.levels.fyi/heatmap/">Levels.fyi Compensation Heatmap</a>
+        <p>
+            <a href="https://www.levels.fyi/heatmap/">Levels.fyi Compensation Heatmap</a>
+            |
+            <a href="https://github.com/RickSlick3/vis-in-the-wild">GitHub Repository</a>
+        </p>
     </footer>
 </body>
 </html>
